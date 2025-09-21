@@ -3,7 +3,7 @@
 This repo contains simple, well-documented implementations of common data structures in modern C++:
 - LinkedList (template-based, unique_ptr)
 - Stack, Queue (wrappers)
-- (optional) Binary Search Tree
+- Binary Search Tree
 
 ## Build & Run
 See CMakeLists.txt or compile directly:

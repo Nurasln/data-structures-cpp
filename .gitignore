@@ -1,0 +1,10 @@
+# Build folders and CMake cache
+/build/
+/CMakeFiles/
+/CMakeCache.txt
+/run_tests.exe
+*.o
+*.obj
+
+# VS Code settings
+.vscode/
