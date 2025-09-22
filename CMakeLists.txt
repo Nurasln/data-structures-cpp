@@ -9,3 +9,6 @@ include_directories(${CMAKE_SOURCE_DIR}/include)
 
 #Test folders
 add_executable(run_tests tests/linked_list_test.cpp)
+add_executable(run_stack_test tests/stack_test.cpp)
+add_executable(run_queue_test tests/circular_queue.h)
+add_executable(run_bst_test tests/bst_test.cpp)
