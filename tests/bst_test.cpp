@@ -1,39 +1,39 @@
 #include "bst.h"
 
 int main() {
-    BST tree;
+    BST<int> int_tree;
 
     // Insert nodes
-    tree.root = tree.insert(tree.root, 50);
-    tree.insert(tree.root, 30);
-    tree.insert(tree.root, 70);
-    tree.insert(tree.root, 20);
-    tree.insert(tree.root, 40);
-    tree.insert(tree.root, 60);
-    tree.insert(tree.root, 80);
+    int_tree.root = int_tree.insert(int_tree.root, 50);
+    int_tree.insert(int_tree.root, 30);
+    int_tree.insert(int_tree.root, 70);
+    int_tree.insert(int_tree.root, 20);
+    int_tree.insert(int_tree.root, 40);
+    int_tree.insert(int_tree.root, 60);
+    int_tree.insert(int_tree.root, 80);
 
-    cout << "Inorder Traversal: ";
-    tree.inorderTraversal(tree.root);
-    cout << endl;
+    std::cout << "Inorder Traversal: ";
+    int_tree.inorderTraversal(int_tree.root);
+    std::cout << std::endl;
 
-    cout << "Preorder Traversal: ";
-    tree.preorderTraversal(tree.root);
-    cout << endl;
+    std::cout << "Preorder Traversal: ";
+    int_tree.preorderTraversal(int_tree.root);
+    std::cout << std::endl;
 
-    cout << "Postorder Traversal: ";
-    tree.postorderTraversal(tree.root);
-    cout << endl;
+    std::cout << "Postorder Traversal: ";
+    int_tree.postorderTraversal(int_tree.root);
+    std::cout << std::endl;
 
-    cout << "Height: " << tree.height(tree.root) << endl;
-    cout << "Node Count: " << tree.nodeCount(tree.root) << endl;
-    cout << "Leaf Count: " << tree.leafCount(tree.root) << endl;
+    std::cout << "Height: " << int_tree.height(int_tree.root) << std::endl;
+    std::cout << "Node Count: " << int_tree.nodeCount(int_tree.root) << std::endl;
+    std::cout << "Leaf Count: " << int_tree.leafCount(int_tree.root) << std::endl;
 
-    cout << "Min Value: " << tree.minValue(tree.root) << endl;
-    cout << "Max Value: " << tree.maxValue(tree.root) << endl;
+    std::cout << "Min Value: " << int_tree.minValue(int_tree.root) << std::endl;
+    std::cout << "Max Value: " << int_tree.maxValue(int_tree.root) << std::endl;
 
     int searchVal = 40;
-    cout << "Search " << searchVal << ": "
-         << (tree.search(tree.root, searchVal) ? "Found" : "Not Found") << endl;
+    std::cout << "Search " << searchVal << ": "
+         << (int_tree.search(int_tree.root, searchVal) ? "Found" : "Not Found") << std::endl;
 
     return 0;
 }
